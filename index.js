@@ -6,8 +6,7 @@ const arr = require('./arrays')
 var objeto = arr.objeto
 var matriz = arr.matrizVazia.obj
 
-var not = "a1"
-var array = arr.array(not)
+var array = arr.array(notacao)
 
 //process.exit(1)
 
