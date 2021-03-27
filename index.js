@@ -6,8 +6,8 @@ const arr = require('./arrays')
 var objeto = arr.objeto
 var matriz = arr.matrizVazia.obj
 
-const notacao = validacao.validar()
-var array = arr.array(notacao)
+var not = "a1"
+var array = arr.array(not)
 
 //process.exit(1)
 
