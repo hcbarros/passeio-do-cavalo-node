@@ -2,24 +2,28 @@
 const validacao = require('./validar')
 const arr = require('./arrays')
 
-
-var objeto = arr.objeto
-var matriz = arr.matrizVazia.obj
-
-const notacao = validacao.validar()
-
-var array = arr.array(notacao)
-
-//process.exit(1)
+var notacao = validacao.validar()
+var array = arr.getArray(notacao)
 
 
+var result = []
 
-setInterval(() => {
-
+const processar = () => {
     process.stdout.write("\u001b[2J\u001b[0;0H");
     process.stdout.write('\033c');
     console.log('\033[2J');
-    console.table(matriz)
-}, 2000);
+    if(array.length === 0) {
+      result.map((notac) => console.log(notac))
+      process.exit(1)
+    }
+    notacao = array.shift()
+    result.push(notacao)
+    var i = arr.getIndex(notacao)
+    arr.print(i)
+}
 
-    
+
+var interval = setInterval(() => {
+   processar()
+}, 1000);
+
