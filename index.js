@@ -17,8 +17,6 @@ var interval = setInterval(() => {
         console.API = console
     }
     console.API.clear()
-    
-    //process.stdout.write("\u001b[2J\u001b[0;0H");
     //process.stdout.write('\033c');
     
     if(array.length === 0) {
