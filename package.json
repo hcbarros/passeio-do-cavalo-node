@@ -1,0 +1,22 @@
+{
+  "name": "cavalo-wolfgang-node",
+  "version": "1.0.0",
+  "description": "cavalo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hcbarros/cavalo-Wolfgang-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hcbarros/cavalo-Wolfgang-node/issues"
+  },
+  "homepage": "https://github.com/hcbarros/cavalo-Wolfgang-node#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
