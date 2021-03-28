@@ -10,7 +10,7 @@ function validar() {
 
       repete = false
       
-      var notacao = read.question("\ninforme a notação: ", {
+      var notacao = read.question("\ninforme uma notação: ", {
           hideEchoBack: false 
       });
 
@@ -25,7 +25,7 @@ function validar() {
       var i2 = notacao.charCodeAt(1)
 
       if((i1 < 97 || i1 > 104 || i2 < 49 || i2 > 56) && !repete) {
-        console.log("\nA notação está incorreta!\nO primeiro caracter deve ser uma letra de 'a' a 'h'.\nO segundo caracter eh uma valor de 0 a 8")
+        console.log("\nA notação está incorreta!\nO primeiro caracter deve ser uma letra de 'a' a 'h'.\nO segundo caracter eh uma valor de 1 a 8")
         repete = true
       }
     }
